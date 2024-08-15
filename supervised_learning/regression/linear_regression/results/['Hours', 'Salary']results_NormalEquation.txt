@@ -1,0 +1,43 @@
+
+RESULTS OF LINEAR REGRESSION ANALYSIS (MANUALLY CODED) 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+0) Algorithm: NormalEquation
+
+1) Features: ['Hours'], Target: ['Salary'] 
+
+2) Hypothesis is h(x) = 692.77 + 9.99x_1
+
+3) Optimal parameters are [692.77022548   9.98756318], with a cost of 9.777796752342395
+
+4) R^2 value is 1.00, SER is 4.49, p-values are [4.10589296e-186 1.22522590e-180]
+
+5) Prediction results have been locally stored in a csv file
+
+
+CHECK RESULTS WITH STATSMODELS'S API (AUTOMATICALLY CODED): 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -                             OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       1.000
+Model:                            OLS   Adj. R-squared:                  1.000
+Method:                 Least Squares   F-statistic:                 4.370e+05
+Date:                Wed, 13 Mar 2024   Prob (F-statistic):          1.23e-180
+Time:                        09:44:17   Log-Likelihood:                -290.56
+No. Observations:                 100   AIC:                             585.1
+Df Residuals:                      98   BIC:                             590.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        692.7702      0.921    751.804      0.000     690.942     694.599
+x1             9.9876      0.015    661.041      0.000       9.958      10.018
+==============================================================================
+Omnibus:                       61.838   Durbin-Watson:                   1.834
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                7.605
+Skew:                           0.141   Prob(JB):                       0.0223
+Kurtosis:                       1.679   Cond. No.                         126.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
